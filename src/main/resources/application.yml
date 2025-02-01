@@ -1,0 +1,22 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  application:
+    name: trading
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tradingdb
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+
+logging:
+  group:
+    web: DEBUG
